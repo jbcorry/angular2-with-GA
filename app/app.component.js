@@ -2,9 +2,17 @@
   app.AppComponent =
     ng.core.Component({
       selector: 'my-app',
-      template: '<h1>My First Angular 2 App</h1>'
+      templateUrl: '../templates/main.html'
     })
     .Class({
-      constructor: function() {}
+      constructor: function() {
+        this.num = 0;
+        this.changeNum = function() {
+          this.num = this.num + 1;
+        }
+        this.resetNum = function() {
+          this.num = 0;
+        }
+      }
     });
 })(window.app || (window.app = {}));
