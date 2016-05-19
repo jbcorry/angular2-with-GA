@@ -13,6 +13,7 @@
         this.resetNum = function() {
           this.num = 0;
         }
+        this.name = 'Joe Shmoe';
       }
     });
 })(window.app || (window.app = {}));

@@ -1,6 +1,14 @@
 <div>
   This will increment a counter on click using angular 2
-  <button (click)='changeNum()'>Push</button>
-  {{num}}
-  <button (click)='resetNum()'>Reset</button>
 </div>
+
+  <button (click)='changeNum()'>Push</button>
+  <div>
+  {{num}}
+</div>
+  <button (click)='resetNum()'>Reset</button>
+<form>
+<input [(title)]='name' placeholder='enter your name' type='text'>
+<input type='submit'>
+</form>
+{{name}}
