@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var angulartics2_google_analytics_1 = require('angulartics2/src/providers/angulartics2-google-analytics');
+var angulartics2_google_tag_manager_1 = require('angulartics2/src/providers/angulartics2-google-tag-manager');
 var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
 var angulartics2_1 = require('angulartics2');
@@ -16,12 +16,12 @@ var route1_1 = require('./components/route1');
 var route2_1 = require('./components/route2');
 var angulartics2_2 = require('angulartics2');
 var AppComponent = (function () {
-    function AppComponent(angulartics2, angulartics2GoogleAnalytics) {
+    function AppComponent(angulartics2, angulartics2GoogleTagManager) {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            providers: [angulartics2_google_analytics_1.Angulartics2GoogleAnalytics],
+            providers: [angulartics2_google_tag_manager_1.Angulartics2GoogleTagManager],
             templateUrl: './app/app.component.html',
             directives: [router_deprecated_1.ROUTER_DIRECTIVES, angulartics2_2.Angulartics2On]
         }),
@@ -29,7 +29,7 @@ var AppComponent = (function () {
             { path: '/route1', name: 'Route1', component: route1_1.Route1 },
             { path: '/route2', name: 'Route2', component: route2_1.Route2 },
         ]), 
-        __metadata('design:paramtypes', [angulartics2_1.Angulartics2, angulartics2_google_analytics_1.Angulartics2GoogleAnalytics])
+        __metadata('design:paramtypes', [angulartics2_1.Angulartics2, angulartics2_google_tag_manager_1.Angulartics2GoogleTagManager])
     ], AppComponent);
     return AppComponent;
 }());
