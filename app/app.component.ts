@@ -14,12 +14,13 @@ import {Angulartics2On} from 'angulartics2';
   directives: [ROUTER_DIRECTIVES, Angulartics2On]
 })
 
+
 @RouteConfig([
   {path: '/route1', name: 'Route1', component: Route1},
   {path: '/route2', name: 'Route2', component: Route2},
 ])
 
 
-export class AppComponent { 
+export class AppComponent {
     constructor(angulartics2: Angulartics2, angulartics2GoogleTagManager: Angulartics2GoogleTagManager) {}
 }
